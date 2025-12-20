@@ -5,6 +5,16 @@ import Footer from "@/components/Footer/footer";
 import AppSidebar from "@/components/Sidebar/AppSidebar";
   
 
+const geistSans = Geist({
+  subsets: ["latin"],
+  variable: "--font-geist-sans",
+});
+
+const geistMono = Geist_Mono({
+  subsets: ["latin"],
+  variable: "--font-geist-mono",
+});
+
 const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-plus-jakarta",
@@ -21,7 +31,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-100`}
+        className={`${geistSans.variable} ${geistMono.variable} ${plusJakarta.variable} antialiased bg-gray-100`}
       >
         <Header />
         <div className="flex">
