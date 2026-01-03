@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header/header";
 import Footer from "@/components/Footer/footer";
 import AppSidebar from "@/components/Sidebar/AppSidebar";
+import NotificationInit from "@/components/notifications/NotificationInit";
   
 
 const geistSans = Geist({
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${plusJakarta.variable} antialiased bg-gray-100`}
       >
+        <NotificationInit />
         <Header />
         <div className="flex">
           <AppSidebar />
