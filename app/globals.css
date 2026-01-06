@@ -52,9 +52,10 @@
   --radius-lg: var(--radius);
 
   --radius-xl: calc(var(--radius) + 4px);
-
+}
+@theme {
   --color-background: var(--background);
-
+  --color-primary: var(--color-primary);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-plus-jakarta);
   --font-mono: var(--font-plus-jakarta);
@@ -316,9 +317,13 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-plus-jakarta), sans-serif;
   }
 }
 
+body {
+  @apply bg-background text-foreground;
+}
